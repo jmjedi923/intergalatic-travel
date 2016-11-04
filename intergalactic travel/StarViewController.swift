@@ -10,17 +10,19 @@ import UIKit
 
 class StarViewController: UIViewController {
 
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextViewController = segue.destination as! StarViewController
+        let button = sender as! UIButton
+        nextViewController.title = button.currentTitle
+        
     }
-    
 
     
 }
