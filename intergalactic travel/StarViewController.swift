@@ -9,20 +9,25 @@
 import UIKit
 
 class StarViewController: UIViewController {
+    @IBOutlet weak var starImageView: UIImageView!
 
- 
+    var isBlueStar: Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+if isBlueStar!
+        {
+    view.backgroundColor = UIColor.blue
+            starImageView.image = UIImage (named: "blueStar")
+        }
+        else
+{view.backgroundColor = UIColor.red
+    starImageView.image = UIImage (named: "redDwarf")
+        }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextViewController = segue.destination as! StarViewController
-        let button = sender as! UIButton
-        nextViewController.title = button.currentTitle
+  
         
     }
 
     
-}
+

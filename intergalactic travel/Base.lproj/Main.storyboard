@@ -64,12 +64,24 @@
                     <view key="view" contentMode="scaleToFill" id="Cph-Cp-8Rx">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y8J-aQ-1bf"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y8J-aQ-1bf" secondAttribute="trailing" id="EzC-Xn-xqO"/>
+                            <constraint firstItem="Y8J-aQ-1bf" firstAttribute="top" secondItem="YSt-QR-W0e" secondAttribute="bottom" id="Fjb-Cf-aqj"/>
+                            <constraint firstItem="Y8J-aQ-1bf" firstAttribute="leading" secondItem="Cph-Cp-8Rx" secondAttribute="leading" id="OJI-bT-zf5"/>
+                            <constraint firstItem="6ME-v5-Q9o" firstAttribute="top" secondItem="Y8J-aQ-1bf" secondAttribute="bottom" id="Q8B-Kx-C9U"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="starImageView" destination="Y8J-aQ-1bf" id="L93-HB-ZAc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQt-U4-aGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552" y="-515"/>
+            <point key="canvasLocation" x="1551.5625" y="-515.0390625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RIB-Rd-pOj">
@@ -91,6 +103,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wFd-Fc-6kt"/>
+        <segue reference="bJl-ds-Bh7"/>
     </inferredMetricsTieBreakers>
 </document>
